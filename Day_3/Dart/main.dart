@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  // part1('../input1');
+  part1('../input1');
   part2('../input2');
 }
 
@@ -78,7 +78,6 @@ int calcGear(List<String> lines) {
 }
 
 int calculateGearRatio(List<String> lines, int row, int column) {
-  print('asterisk found at $row $column');
   // find number in rows [row-1, row+1] (inclusive)
   List<Number> numbers = [];
   for(var i = max(0, row -1); i <= min(lines.length, row +1); i++) {
